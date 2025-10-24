@@ -1,0 +1,152 @@
+html{
+	height: 200%;
+	width: 100%;
+}
+
+/* make sizing predictable */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #F3E5D8;
+	height: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 250;
+  	font-style: normal;
+	font-size: 0.85rem;
+}
+
+.container{
+	background-color: white;
+	border-radius: 1rem;
+	height: max-content;
+	/* use a fluid, constrained width so it works on desktop and mobile */
+	max-width: min(700px, 90%);
+	padding: 3rem;
+	color: #302d2c;
+	display: flex;
+	flex-direction: column;
+}
+
+.image{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 1rem;
+}
+.image img{
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 1rem;
+}
+
+h1{
+	color: black;
+	font-family: "IBM Plex Serif", serif;
+  	font-weight: 600;
+  	font-style: normal;
+	font-size: 2.7rem;
+}
+
+.time{
+	background-color: #f3e6d8;
+	padding: 1rem;
+	padding-left: 1.3rem;
+}
+
+.time li::marker{
+	color: #7b284f;
+}
+
+h2{
+	color: #7b284f;
+}
+
+li{
+	margin-bottom: 0.7rem;
+	line-height: 1.5rem;
+}
+
+h3{
+	color: #854632;
+	font-family: "IBM Plex Serif", serif;
+  	font-weight: 500;
+  	font-style: normal;
+	font-size: 1.8rem;
+
+}
+
+li::marker{
+	color: #854632;
+	font-weight: bold;
+}
+
+ol li::marker{
+	font-size: 1.2rem;
+}
+
+span{
+	font-weight: 450;
+}
+
+hr{
+	width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;  
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+table th, table td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  font-weight: 400;
+  border: none; 
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ece6e6; 
+}
+table tbody tr:last-child {
+  border-bottom: none; 
+}
+
+table th:first-child, table td:first-child {
+  color: #302d2c; 
+  font-weight: 400;
+}
+
+.nutritionalValue {
+  color: #854632;    
+  font-weight: 700;   
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+	body {
+		font-size: 0.95rem;
+	}
+	.container {
+		padding: 2rem;
+		max-width: min(640px, 94%);
+	}
+	h1 {
+		font-size: 2.2rem;
+	}
+	.time {
+		padding: 0.8rem;
+	}
+	table th, table td {
+		padding: 0.6rem 0.8rem;
+	}
+}
+
